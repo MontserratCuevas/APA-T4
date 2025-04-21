@@ -58,7 +58,7 @@ class Aleat :
         self.x0 = (self.a * self.x0 + self.c) % self.m
         return self.x0
     
-    def __call__(self, /, x0):
+    def __call__(self, x0, /):
         self.x0 = x0
 
 def aleat(*, m = 2**48, a = 25214903917, c = 11, x0 = 1212121):
